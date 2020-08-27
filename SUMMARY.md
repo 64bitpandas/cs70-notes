@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Welcome](README.md)
 * [Propositional Logic](propositional-logic.md)
 * [LaTeX Reference](latex-reference.md)
 
