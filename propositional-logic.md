@@ -1,6 +1,6 @@
 # Propositional Logic
 
-### What are Propositions?
+## What are Propositions?
 
 Propositions are anything that can be **true** or **false.** This could include:
 
@@ -38,6 +38,12 @@ $$
 
 \*\*\*\*
 
+Another example of distribution is this, which works for any combination of and's and or's:
+
+$$
+(P \lor Q) \land R \equiv (P \land R) \lor (Q \land R)
+$$
+
 \*\*\*\*
 
 ### Implication
@@ -69,6 +75,8 @@ Roughly, implication in plain English can be stated in the form **if P, then Q.*
 
 Note that this truth table is equivalent to the one for $$\lnot P \lor Q$$!  That means this formula is logically the same as $$P \implies Q$$.
 
+\(If two propositions have the same truth table, then they are logically equivalent. However, it's still possible for a proposition to imply another even if their truth tables are different!\)
+
 ### Quantifiers
 
 Sometimes, we need to define a specific type of variable to work with in a propositional clause. For instance, take the proposition, _"There exists a natural number that is equal to the square of itself."_ We could write this as:
@@ -79,7 +87,23 @@ $$
 
 You could think about the parentheses almost like defining a **scope** of variables, like what might happen in programming! Here, the first clause is _defining_ an arbitrary variable $$x$$to be any natural number.
 
-### Further Reading
 
-Note 1: [https://www.eecs70.org/static/notes/n1.pdf](https://www.eecs70.org/static/notes/n1.pdf)
+
+## Exercises
+
+{% tabs %}
+{% tab title="Q1" %}
+Is the expression $$\forall x \exists y (Q(x,y) \implies P(x))$$equivalent to the expression $$\forall x ((\exists y)(Q(x,y)) \implies P(x))$$?  
+\(Source: Discussion 0 2a\)
+{% endtab %}
+
+{% tab title="Answer 1" %}
+**No**, they are not equivalent.
+{% endtab %}
+{% endtabs %}
+
+## Resources
+
+Note 1: [https://www.eecs70.org/static/notes/n1.pdf](https://www.eecs70.org/static/notes/n1.pdf)  
+Discussion 0: [https://www.eecs70.org/static/discussions/dis0.pdf](https://www.eecs70.org/static/discussions/dis0.pdf)
 

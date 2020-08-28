@@ -16,7 +16,7 @@ description: A list of frequently used mathematical notation bits.
 | $$\lor$$ | Disjunction \(or\) | `\lor` |
 | $$\lnot$$ | Negation \(not\) | `\lnot` |
 | $$\forall$$ | For all | `\forall` |
-|  |  |  |
+| $$\oplus$$ | Exclusive or \(xor\) | `\oplus` |
 
 ### Sets
 
