@@ -12,6 +12,7 @@ description: A list of frequently used mathematical notation bits.
 | $$\iff$$ | Logical equivalence | `\iff` |
 | $$\equiv$$ | Logical equivalence | `\equiv` |
 | $$\exists$$ | Existence | `\exists` |
+| $$\in$$ | Inclusion | `\in` |
 | $$\land$$ | Conjunction \(and\) | `\land` |
 | $$\lor$$ | Disjunction \(or\) | `\lor` |
 | $$\lnot$$ | Negation \(not\) | `\lnot` |
