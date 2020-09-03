@@ -101,6 +101,61 @@ This can be likened to the **domino effect.** If the first one's true, then it k
 * **Prove P\(k+1\).** \(Induction Step\)
   * When proving the induction step, we can treat the induction hypothesis as a true statement!
 
+**Example: The Two Color Theorem**
+
+Here's a visually intuitive example of induction in action!
+
+The Two Color Theorem states that for any collection of intersecting line segments, the regions that they divide can be assigned one of two colors such that a line never has the same color on both sides:
+
+\[\[Insert image here\]\]
+
+In order to prove this, let's start at the **base case**, where there is only one line:
+
+Here, it's pretty clear that it is indeed possible to put a different color on each side of the line, in this case let's just choose blue and red:
+
+\[\[Insert image here\]\]
+
+Now, let's see what happens when we add a new line:
+
+\[\[Insert\]\]
+
+Looks like we have a conflict now! The blues on the top and reds on the bottom are touching. However, it's not too hard to fix this. Let's just flip the blue and red on one of the sides:
+
+\[\[Insert\]\]
+
+It turns out that this process: drawing a new line and flipping all of the colors on one side, works in any configuration of lines! This is because of the fact that flipping the colors on one side of a line doesn't affect whether or not those colors are alternating.
+
+\[\[Insert\]\]
+
+### Stronger Induction
+
+Sometimes, an inductive proof can be rather elusive. It might be easier to **make the statement stronger** and prove that instead! \(It should make sense that a stronger argument means that a weaker argument is also true.\)
+
+For example, take the statement "The sum of the first _n_ odd numbers is the square of a natural number." 
+
+As we try to figure out a pattern, we might notice something:
+
+> For n = 1: $$1 = 1^2 = n^2$$
+>
+> For n = 2: $$1 + 3 = 2^2 = n^2$$
+>
+> For n = 3: $$1 + 3 + 5 = 3^2 = n^2$$
+
+Wow, looks like not only is the sum equal to some arbitrary square number, but it's actually equal to $$n^2$$! It's a lot easier to prove this fact than the original one, and proving this completely includes the original statement.
+
+Another \(aptly named\) principle that might come in handy is the **Strong Induction Principle!** This principle is useful for when you don't want your base case to be $$0$$. The Strong Induction Principle states that if we prove all of the propositions from P\(0\) up to P\(k\), then P\(k\) can be used as a base case:
+
+$$(\forall k \in \mathbb{N})((P(0) \land P(1) \land \cdots \land P(k)) \implies P(k+1)) \implies (\forall k \in \mathbb{N})(P(k))$$
+
+### Proof of the Induction Principle
+
+$$(\lnot \forall n)P(n) \implies ((\exists n) \lnot (P(n - 1) \implies P(n))$$
+
+The **Well Ordering Principle** states that for all subsets of natural numbers, there exists a smallest number in that subset.
+
+* **This is not trivial!** Think about rational numbers- it's impossible to get the smallest rational number because it extends to $$-\infty$$.
+* **This principle justifies the use of induction** **for any set of natural numbers.** If the smallest number \(base case\) always exists, then we can just prove that and move upwards, rather than trying to prove both $$k-1$$and $$k+1$$.
+
 ## More Resources
 
 Note 2: [https://www.eecs70.org/static/notes/n2.pdf](https://www.eecs70.org/static/notes/n2.pdf)
