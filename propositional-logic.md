@@ -66,14 +66,14 @@ Roughly, implication in plain English can be stated in the form **if P, then Q.*
 
 #### Truth Table
 
-| P | Q | P $$\implies$$Q |
-| :--- | :--- | :--- |
-| T | T | T |
-| T | F | F |
-| F | T | T |
-| T | T | T |
+| P | Q | P $$\implies$$Q | P $$\iff$$Q |
+| :--- | :--- | :--- | :--- |
+| T | T | T | T |
+| T | F | F | F |
+| F | T | T | F |
+| T | T | T | T |
 
-Note that this truth table is equivalent to the one for $$\lnot P \lor Q$$!  That means this formula is logically the same as $$P \implies Q$$.
+Note that the truth table for $$P \implies Q$$ is equivalent to the one for $$\lnot P \lor Q$$!  That means this formula is logically the same as $$P \implies Q$$.
 
 \(If two propositions have the same truth table, then they are logically equivalent. However, it's still possible for a proposition to imply another even if their truth tables are different!\)
 
