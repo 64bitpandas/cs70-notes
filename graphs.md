@@ -36,8 +36,10 @@ A **walk** is a sequence of edges that could possibly repeat a vertex or edge.
 
 A **tour** is a walk that starts and ends on the same nodes. Additionally, it cannot have any repeated edges.
 
-* An **Eulerian tour** is a tour that visits each edge in a graph **exactly once.**
-  * Theorem: any undirected graph has an Eulerian tour if and only if all vertices have even degree and is connected.
+* An **Eulerian walk** is a walk that uses **every edge** exactly once.
+  * Doesn't require all vertices to be connected! There could be an isolated vertex with 0 degree.
+* An **Eulerian tour** is a tour that visits **every edge** in a graph exactly once**.**
+  * Theorem: any undirected graph has an Eulerian tour if and only if all vertices have **even degree** and is connected.
   * Proof: You need to use two incident edges every time you visit a node \(to enter and leave\). So when you enter, you need another edge to be able to leave! If a vertex has an odd number of edges, then you get stuck on that vertex with nowhere to go once you visit it.
 
 Two vertices $$u$$and $$v$$are **connected** if there exists a **path** between them.
