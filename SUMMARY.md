@@ -5,4 +5,5 @@
 * [Proofs](proofs.md)
 * [Stable Matching](stable-matching.md)
 * [LaTeX Reference](latex-reference.md)
+* [Graphs](graphs.md)
 

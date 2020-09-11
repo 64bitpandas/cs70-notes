@@ -36,24 +36,6 @@ Insert proof of existence
 
 Insert proof of stability
 
-#### Optimality
-
-Theorem: Job Propose, Candidate Reject produces a job-optimal pairing.
-
-* Proof by contradiction: assume that there's a job j that doesn't get an optimal candidate c.
-* Let t be the first day job j gets rejected by its optimal candidate g.
-* On that day, there was another job offer j\* that c preferred.
-* Therefore, j\* likes c at least as much as the optimal candidate. **This creates a rogue couple.** 
-* By the Well Ordering Principle, this is the first day that job j was rejected
-
-**Pessimality**
-
-Theorem: Job Propose, Candidate Reject produces a candidate-pessimal pairing:
-
-* Let T be a pairing where \(j, c\) is a pair.
-* Let S be a stable pairing that is worse for c than T is. So \(j, c\*\) is a pair.
-* Since j prefers c to c\*, \(j, c\*\) is a rogue couple for S which is a **contradiction.** Therefore, T is the worst possible pairing for c.
-
 ### An Example
 
 Let's say that three people, A,B,C, applied to jobs 1,2,3. Their preferences are \(in order from most to least favored\):
