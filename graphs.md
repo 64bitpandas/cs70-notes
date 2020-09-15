@@ -4,7 +4,7 @@
 This is a second introduction to graphs that assumes you've at least seen them before. Take a look at the [61B version](https://cs61b.bencuan.me/abstract-data-types/graphs) if you feel lost!
 {% endhint %}
 
-### What's a graph?
+## What's a graph?
 
 Formally, a graph is a **set of vertices with a set of edges connecting them.** A graph can be defined as $$G = (V, E)$$ where $$V = \{A, B, \cdots V_n\}$$ and $$E = \{\{A, B\}, \{B, C\} \cdots \}$$
 
@@ -45,6 +45,77 @@ A **tour** is a walk that starts and ends on the same nodes. Additionally, it ca
 Two vertices $$u$$and $$v$$are **connected** if there exists a **path** between them.
 
 * If all vertices are connected, then the graph is considered a **connected graph.**
+
+\*\*\*\*
+
+A **complete graph** is a graph where every vertex is connected to every other vertex by exactly one edge. Complete graphs have some nice properties:
+
+* Every vertex is incident to $$n-1$$edges \(if there are $$n$$total vertices\).
+* The sum of all degrees is $$n(n-1)$$.
+* The opposite of a complete graph is a **tree** that has the minimum number of edges \($$n-1$$ total\).
+* They can also be represented as **hypercubes** if they have $$2^n$$vertices and $$n2^{n-1}$$edges.
+
+## Planar Graphs
+
+A **planar graph** is a graph that can be drawn without having two edges overlap:
+
+**Euler's Formula** states that a connected planar graph has two more vertices and faces than the number of edges:
+
+$$
+v + f = e + 2
+$$
+
+Let's take a look at some examples to convince ourselves of how this works:
+
+\(A triangle has 3 edges and two faces: the inner face and outer face.\)
+
+\(This shape is connected, but there is no enclosed face so the only face is the outer face.\)
+
+
+
+Another consequence of Euler's Formula is the inequality that holds for connected planar graphs:
+
+$$
+3f \le 2e
+$$
+
+This inequality states that any planar graph with 2 or more vertices must have at most 3 faces for every 2 edges. We know this because the smallest possible face is a triangle. If we plug this into Euler's Formula, we can eliminate one variable to get $$e \le 3v - 6$$. This makes it much easier to figure out if a graph is planar or not, since faces are often difficult to count.
+
+
+
+### Proof of Euler's Formula
+
+Let's use induction!
+
+**Base Case:** Let there be 0 edges and 1 vertex. This means there's only 1 \(outer\) face as well. In this case, $$v + f = 1 + 1 = 0 + 2$$. This works!
+
+**Induction Step:**   
+Let's consider the case of a tree. Then, we know that there are always 1 fewer edges than vertices, and only one face:  
+$$v + 1 = (v-1) + 2$$ works!
+
+What about something that's not a tree? Well, things get a bit tricker here.
+
+* Let's consider a graph:
+* Now, let's start with the tree corresponding to the same number of vertices as the original:
+* Now, we'll keep adding edges to enclose faces until we reach the number of edges in the original:
+* We'll notice here that for every edge we add, a new face is created!
+* Therefore, we can plug this fact into our inductive hypothesis \(that Euler's formula works\) to get $$v + (f+1) = (e+1) + 2$$.
+
+## Graph Coloring
+
+A **graph coloring** assigns a color to each vertex such that every edge has two different colors on its two endpoints:
+
+Often, we would like to figure out the **minimum number of colors** it takes to properly color a graph.
+
+### Six Color Theorem
+
+Let's propose that every graph can be colored with 6 colors or less. 
+
+From Euler's Formula, recall that $$e \le 3v - 6$$for any planar graph with more than 2 vertices. We also know that the degree of the graph is equal to $$2e$$.
+
+So, the average degree of any given vertex is $$\frac{2e}{v} \le \frac{2(3v-6)}{v} \le 6 - \frac{12}{v}$$. This proves that there **exists** a vertex with degree at most 5 \(due to the property of averages\). Let's try removing this vertex and see what happens.
+
+Well, now each of the 5 neighbors each are assigned a different color. If we add the vertex back, then it can assume the 6th color. We can use this proof inductively to show that adding any vertex will result in the same thing occurring.
 
 
 
