@@ -53,6 +53,10 @@ A **complete graph** is a graph where every vertex is connected to every other v
 * Every vertex is incident to $$n-1$$edges \(if there are $$n$$total vertices\).
 * The sum of all degrees is $$n(n-1)$$.
 * The opposite of a complete graph is a **tree** that has the minimum number of edges \($$n-1$$ total\).
+  * Trees are **acyclic** and **connected.**
+  * **Leaves** are vertices that have degree 1.
+  * The **root** is a single vertex that has degree 2.
+  * **Non-leaf vertices** have degree 3.
 * They can also be represented as **hypercubes** if they have $$2^n$$vertices and $$n2^{n-1}$$edges.
 
 ## Planar Graphs
