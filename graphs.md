@@ -58,6 +58,7 @@ A **complete graph** is a graph where every vertex is connected to every other v
   * The **root** is a single vertex that has degree 2.
   * **Non-leaf vertices** have degree 3.
 * They can also be represented as **hypercubes** if they have $$2^n$$vertices and $$n2^{n-1}$$edges.
+  * Hypercube cut property: For any cut \(S, V-S\) in a hypercube \(one that splits it into two subcubes\), the number of cut edges is at least the size of the small cube.
 
 ## Planar Graphs
 
