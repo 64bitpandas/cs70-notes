@@ -8,7 +8,7 @@ This is an important concept in many aspects of computer science, namely cryptog
 
 ## Key Ideas
 
-If d divides x and d divides y, then d divides \(y-x\). $$d \mid x, d \mid y \implies d \mid (y-x)$$  
+**If d divides x and d divides y, then d divides \(y-x\)**. $$d \mid x, d \mid y \implies d \mid (y-x)$$  
 \(Reminder: $$a \mid b \iff (\exists q \in \mathbb{Z})(a = qb)$$\)
 
 **Modular Equivalence:** If you're looking at a clock and it becomes 25:00, you know it's actually the same as 1:00. Even if they're technically not the same number, they can be treated the same way.
@@ -17,7 +17,7 @@ If d divides x and d divides y, then d divides \(y-x\). $$d \mid x, d \mid y \im
 
 **Important Notation Distinction:** $$x \pmod{m}$$ is the **class of numbers** that follow the mod rule $$m$$. It can be used to write equivalences \($$10 \equiv 21 \pmod{11}$$\). However, $$\mod(x, m)$$is just a number \(the remainder when dividing x by m\). $$\mod(x,m) = x - \lfloor{\frac{x}{y}}\rfloor \cdot y $$
 
-**Greatest Common Denominator:** Modular arithmetic can be used to identify an important property of the GCD, which is that $$GCD(x,y) = GCD(x \mod y, y)$$.
+**Greatest Common Denominator \(GCD Mod Corollary\):** Modular arithmetic can be used to identify an important property of the GCD, which is that $$GCD(x,y) = GCD(x \mod y, y)$$.
 
 ## Arithmetic
 
@@ -43,11 +43,26 @@ For example, let's take a look at $$4x = 5 \pmod{7}$$. We can multiply both side
 
 There are some values where it's impossible to get an equivalence into the form $$1 \pmod{m}$$. This usually happens when there is a common factor \(like $$8x \equiv y \pmod{12}$$\). In other words, **if the greatest common divisor of x and m is 1, then x has a multiplicative inverse modulo m. \(x is relatively prime to y\).**
 
-\*\*\*\*
-
 ## Euclid's Algorithm
 
 ![](.gitbook/assets/image%20%284%29.png)
 
+**Euclid's Algorithm** is a recursive procedure for calculating the greatest common denominator. Remember that $$GCD(x,y) = GCD(x \mod y, y)$$ by the GCD Mod Corollary. We can prove that this works using induction:
 
+* Base Case: If y is 0, then any value for x is the GCD since everything can divide 0 to get 0.
+* Inductive Case: Proof of the GCD Mod Corollary.
+
+This is a rather efficient algorithm: at every iteration, the value of x and y decrease dramatically- at least by a factor of 2. This makes it $$\theta(\log_2(x))$$\(in other words, we need one division for each bit that is needed to represent $$x$$\).
+
+### Using Euclid's Algorithm for Inverses
+
+Great! We got the GCD. So what?
+
+Remember that **if the GCD of x and m is 1, then there is an inverse of x.** In more concrete terms, we can state **Euclid's Extended GCD Theorem** as such:
+
+$$
+ax + by = gcd(x,y)
+$$
+
+In other words, the GCD can be written as a scalar multiple of x and y. Since we remember that the definition of the inverse is that $$ax + by = 1$$for some integers a and b, Euclid's Extended Theorem checks out for showing that the inverse exists if the GCD is 1.
 
