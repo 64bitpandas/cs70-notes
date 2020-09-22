@@ -66,3 +66,5 @@ $$
 
 In other words, the GCD can be written as a scalar multiple of x and y. Since we remember that the definition of the inverse is that $$ax + by = 1$$for some integers a and b, Euclid's Extended Theorem checks out for showing that the inverse exists if the GCD is 1.
 
+![](.gitbook/assets/image%20%289%29.png)
+
