@@ -43,7 +43,9 @@ For example, let's take a look at $$4x = 5 \pmod{7}$$. We can multiply both side
 
 There are some values where it's impossible to get an equivalence into the form $$1 \pmod{m}$$. This usually happens when there is a common factor \(like $$8x \equiv y \pmod{12}$$\). In other words, **if the greatest common divisor of x and m is 1, then x has a multiplicative inverse modulo m. \(x is relatively prime to y\).**
 
-## Euclid's Algorithm
+## Algorithms
+
+### Euclid's Algorithm
 
 ![](.gitbook/assets/image%20%284%29.png)
 
@@ -67,4 +69,16 @@ $$
 In other words, the GCD can be written as a scalar multiple of x and y. Since we remember that the definition of the inverse is that $$ax + by = 1$$for some integers a and b, Euclid's Extended Theorem checks out for showing that the inverse exists if the GCD is 1.
 
 ![](.gitbook/assets/image%20%289%29.png)
+
+### The Chinese Remainder Theorem
+
+There is a unique solution $$x \pmod{mn} $$such that $$x = a \pmod{m}$$, $$x = b \pmod{n}$$, and $$gcd(m,n) = 1$$.
+
+### Fermat's Little Theorem
+
+For prime p and an $$a \not\equiv 0 \pmod{p}$$, $$a^{p-1} \equiv 1 \pmod{p}$$.
+
+
+
+
 
