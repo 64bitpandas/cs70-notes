@@ -68,11 +68,33 @@ $$
 
 In other words, the GCD can be written as a scalar multiple of x and y. Since we remember that the definition of the inverse is that $$ax + by = 1$$for some integers a and b, Euclid's Extended Theorem checks out for showing that the inverse exists if the GCD is 1.
 
-![](.gitbook/assets/image%20%289%29.png)
+![](.gitbook/assets/image%20%2812%29.png)
+
+Example: find the inverse of \(60 mod 7\). Here, we can start with GCD\(60, 7\) \(60x + 7y = 1\).
+
+Start with the two equations $$60(1) + 7(0) = 60$$ and $$60(0) + 7(1) = 7)$$. GCD\(60, 7\) is 4, so now let's proceed with GCD\(4, 3\). This is equal to 1, so now let's go to GCD\(3, 1\). 
+
+![](.gitbook/assets/image%20%2811%29.png)
 
 ### The Chinese Remainder Theorem
 
 There is a unique solution $$x \pmod{mn} $$such that $$x = a \pmod{m}$$, $$x = b \pmod{n}$$, and $$gcd(m,n) = 1$$.
+
+In other words:
+
+Let $$n_1 \cdots n_k$$be positive coprime integers. \(Any two of them must be relatively prime.\) Then, for any combination of integers $$a_1 \cdots a_k$$, a **unique** x exists such that $$x \equiv a_i \mod n_i$$for all $$0 < i \le k$$.
+
+In fact, if we let $$b_i = (\frac{N}{n_i}) \cdot (\frac{N}{n_i})^{-1} \mod n_i)$$ , then we can write $$x = \sum_{i=1}^k a_i b_i \pmod{N}$$. This sum is congruent to $$a_i \mod n_i$$. \(N is the product of all of the $$n_i$$.\)
+
+![](.gitbook/assets/image%20%288%29.png)
+
+As an example, let's take three coprime numbers 2, 3, and 5 and arbitrary weights 1, 2, 1. Then we know from the Chinese Remainder Theorem that $$x \equiv 1 \mod 2, 2 \mod 3, 1 \mod 5$$. We can use this information to compute the $$b$$coefficients: for instance, $$b\_1 = \frac{3}{2} \cdot \(\frac{2}{3}
+
+![](.gitbook/assets/image%20%289%29.png)
+
+We're trying to build a number x that satisfies all of the congruences that we defined. The components that x is made up of a bunch of multiples of all the $$a_i$$values multiplied together.
+
+
 
 ### Fermat's Little Theorem
 
