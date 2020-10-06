@@ -109,21 +109,21 @@ The Two Color Theorem states that for any collection of intersecting line segmen
 
 In order to prove this, let's start at the **base case**, where there is only one line:
 
-![](.gitbook/assets/image.png)
+![](../.gitbook/assets/image.png)
 
 Here, it's pretty clear that it is indeed possible to put a different color on each side of the line, in this case let's just choose blue and red.
 
 Now, let's see what happens when we add a new line:
 
-![](.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
 Looks like we have a conflict now! The blues on the top and reds on the bottom are touching. However, it's not too hard to fix this. Let's just flip the blue and red on one of the sides:
 
-![](.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 It turns out that this process: drawing a new line and flipping all of the colors on one side, works in any configuration of lines! This is because of the fact that flipping the colors on one side of a line doesn't affect whether or not those colors are alternating.
 
-![](.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 ### Stronger Induction
 

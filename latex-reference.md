@@ -31,6 +31,7 @@ description: A list of frequently used mathematical notation bits.
 | $$\mathscr{P}$$ | Power set | `\mathscr{P}` |
 | $$\cup$$ | Union \(set or\) | `\cup` |
 | $$\cap$$ | Intersection \(set and\) | `\cap` |
+| $$\emptyset$$ | Empty Set | `\emptyset` |
 
 
 
