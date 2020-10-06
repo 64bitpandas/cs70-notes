@@ -4,6 +4,7 @@
 
 ## Discrete Math
 
+* [Overview](discrete-math/overview.md)
 * [Propositional Logic](discrete-math/propositional-logic.md)
 * [Proofs](discrete-math/proofs.md)
 * [Stable Matching](discrete-math/stable-matching.md)
@@ -15,7 +16,7 @@
 
 ## Probability
 
-* [Untitled](probability/untitled.md)
+* [Overview](probability/untitled.md)
 
 ---
 
