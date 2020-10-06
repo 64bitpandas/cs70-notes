@@ -10,7 +10,7 @@ Formally, a graph is a **set of vertices with a set of edges connecting them.** 
 
 For an **ordered graph** where vertices are numbered, $$E$$could be represented as a set of ordered pairs instead: $$E = \{(A, B), (B, C) \cdots \}$$
 
-
+\(Insert image of graph\)
 
 ### Concepts and Definitions
 
@@ -46,19 +46,40 @@ Two vertices $$u$$and $$v$$are **connected** if there exists a **path** between 
 
 * If all vertices are connected, then the graph is considered a **connected graph.**
 
-\*\*\*\*
-
 A **complete graph** is a graph where every vertex is connected to every other vertex by exactly one edge. Complete graphs have some nice properties:
 
 * Every vertex is incident to $$n-1$$edges \(if there are $$n$$total vertices\).
 * The sum of all degrees is $$n(n-1)$$.
-* The opposite of a complete graph is a **tree** that has the minimum number of edges \($$n-1$$ total\).
-  * Trees are **acyclic** and **connected.**
-  * **Leaves** are vertices that have degree 1.
-  * The **root** is a single vertex that has degree 2.
-  * **Non-leaf vertices** have degree 3.
-* They can also be represented as **hypercubes** if they have $$2^n$$vertices and $$n2^{n-1}$$edges.
-  * Hypercube cut property: For any cut \(S, V-S\) in a hypercube \(one that splits it into two subcubes\), the number of cut edges is at least the size of the small cube.
+
+A **tree** is kind of like the opposite of a complete graph in that it has the **minimum number of edges** in order to ensure all vertices are connected \($$v-1$$ total edges\). Here are some properties of trees, from a graph perspective \(If you aren't already familiar with the recursive definition of trees, head over to the [61B guide](https://cs61b.bencuan.me/abstract-data-types/binary-trees) first to brush up on it!\)
+
+* Trees are **acyclic** and **connected.**
+* **Leaves** are vertices that have degree 1.
+* The **root** is a single vertex that has degree 2.
+* **Non-leaf vertices** have degree 3.
+
+## Hypercubes
+
+A **hypercube** is a specific class of graphs that have highly connected vertices. In order to understand them better, let's start building some up:
+
+Every hypercube has a dimension $$n$$. A 1-dimensional hypercube is simply a line \(2 vertices connected by 1 edge\). Not too exciting:
+
+A 2-dimensional hypercube is a square \(4 vertices connected by 4 edges\). Still pretty familiar:
+
+A 3-dimensional hypercube is a cube \(8 vertices, 12 edges\):
+
+Now, let's get to the interesting stuff. How do we construct a 4-dimensional hypercube?? Well, let's figure out how we went from 2 to 3- we essentially **duplicated** the existing hypercube, then **connected corresponding vertices** \(ones that are in the same relative position\):
+
+If we do this again for the 3-dimensional hypercube, we'll get this 4-dimensional hypercube, which has 16 vertices and 32 edges:
+
+You might have noticed a pattern in how many vertices and edges a hypercube has. Here are those properties stated more formally:
+
+* A hypercube has $$2^n$$vertices.
+* A hypercube has $$n2^{n-1}$$edges.
+
+Hypercubes are super useful, particularly for representing **bit strings.** If we have an $$n$$-dimensional hypercube, then we have enough vertices to represent all possible permutations of 1's and 0's of length $$n$$. Every edge would then represent the act of flipping exactly one bit:
+
+
 
 ## Planar Graphs
 
@@ -106,21 +127,49 @@ What about something that's not a tree? Well, things get a bit tricker here.
 * We'll notice here that for every edge we add, a new face is created!
 * Therefore, we can plug this fact into our inductive hypothesis \(that Euler's formula works\) to get $$v + (f+1) = (e+1) + 2$$.
 
+### Nonplanar Graphs
+
+Although nonplanar graphs don't share many of the nice properties planar graphs do, they're often more accurate representations of real life. They can also be used frequently in proofs to prove that a graph must either be planar or non-planar.
+
+There are two famous non-planar graphs that are worth taking a look into:
+
+#### K3,3
+
+$$K_{3,3}$$is also known as the "utility graph" because of its connection to a popular puzzle: given 3 houses and 3 utilities \(water, gas, electric\), how can we draw a line connecting each house to every utility without having any of the lines cross?
+
+I'll save you an amount of suffering by spoiling the answer: **this is an impossible task when done on a standard \(planar\) paper.** \(Want topical entertainment? [Watch some youtubers solve this problem on a mug.](https://www.youtube.com/watch?v=VvCytJvd4H0)\) This is because $$K_{3,3}$$is **non-planar**, so by definition at least one of the lines has to cross!
+
+$$K_{3,3}$$is a **bipartite graph** since it has two groups of 3 vertices; and within each group, none of the vertices are directly connected to one another. 
+
+#### K5
+
+$$K_5$$is the **complete graph** of 5 vertices. \(This means that each vertex is connected to every other vertex.\) 
+
+We can see that $$K_5$$has 5 vertices and 10 edges. Since we know that all planar graphs have $$E \le 3V - 6$$, we can show that $$K_5$$certainly isn't planar \(since 10 is greater than 3\(5\)\).
+
+
+
+A striking fact: **ALL non-planar graphs contain either** $$K_5$$**or** $$K_{3,3}$$**!** This means that you can prove that a graph is either planar or nonplanar simply by showing that either of these component graphs can or cannot exist in a larger graph.
+
 ## Graph Coloring
 
-A **graph coloring** assigns a color to each vertex such that every edge has two different colors on its two endpoints:
+A **graph coloring** assigns a color to each vertex such that **every edge has two different colors** on its two endpoints:
 
-Often, we would like to figure out the **minimum number of colors** it takes to properly color a graph.
+Often, we would like to figure out the **minimum number of colors** \(categories\) ****it takes to properly color a graph. This could have many uses, from [register allocation](https://en.wikipedia.org/wiki/Register_allocation) to [solving sudoku puzzles](https://medium.com/code-science/sudoku-solver-graph-coloring-8f1b4df47072).
 
 ### Six Color Theorem
 
-Let's propose that every graph can be colored with 6 colors or less. 
+Let's propose that every **planar** graph can be colored with 6 colors or less. 
 
 From Euler's Formula, recall that $$e \le 3v - 6$$for any planar graph with more than 2 vertices. We also know that the degree of the graph is equal to $$2e$$.
 
 So, the average degree of any given vertex is $$\frac{2e}{v} \le \frac{2(3v-6)}{v} \le 6 - \frac{12}{v}$$. This proves that there **exists** a vertex with degree at most 5 \(due to the property of averages\). Let's try removing this vertex and see what happens.
 
 Well, now each of the 5 neighbors each are assigned a different color. If we add the vertex back, then it can assume the 6th color. We can use this proof inductively to show that adding any vertex will result in the same thing occurring.
+
+### Five and Four Color Theorem
+
+It turns out that 6 is actually not the tightest bound we can put on the number of colors needed! It is possible to color all **vertices** with **5 colors** or less and all **faces** with **4 colors** or less in a **planar graph**. I won't go into the details of these proofs here, but check out the bottom of [Note 5](https://www.eecs70.org/static/notes/n5.pdf) for the proof of the 5 color theorem, and [Wikipedia](https://en.wikipedia.org/wiki/Four_color_theorem) has a good introduction to the \(highly technical\) 4 color theorem proof.
 
 
 
