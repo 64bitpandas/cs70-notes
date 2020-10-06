@@ -106,7 +106,19 @@ On the right side, we'll need to invoke De Morgan's Laws to convert the 'exists'
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="Q2" %}
+An integer $$a$$is said to _divide_ another integer $$b$$ if $$a$$is a multiple of $$b$$. Write this idea out using propositional logic \(a divides b can be written as $$a \mid b$$\).
 
+**Note:** This idea is going to be important for a lot of future sections!
+{% endtab %}
+
+{% tab title="Answer 2" %}
+ $$a \mid b \iff (\exists q \in \mathbb{Z})(a = qb)$$
+
+In plain English: "There exists an integer $$q$$such that when we multiply $$q$$with $$b$$, we get $$a$$."
+{% endtab %}
+{% endtabs %}
 
 ## Resources
 

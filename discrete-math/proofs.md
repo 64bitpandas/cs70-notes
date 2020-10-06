@@ -1,14 +1,14 @@
 # Proofs
 
-### Some notation
+## Introduction
 
-Divides: $$a \mid b \iff (\exists q \in \mathbb{Z})(a = qb)$$
+A **proof** is a **set of logical deductions** that can be used to show how something is true. This is powerful because proofs can often be very **general,** allowing a truth to be used in a whole bunch of cases that don't individually need to be re-proven.
 
-
+There are a number of common proof techniques \(although these certainly aren't exhaustive!\) outlined below. 
 
 ## Direct Proofs
 
-In direct proofs, we can use the **definitions** directly to show that something is true.
+In direct proofs, we can use the **definitions** directly to show that something is true. No trickery here, just straightforward navigation from point A to point B.
 
 **Direct Proof Form:**
 
@@ -28,8 +28,9 @@ Let $$D_3$$be the set of 3 digit natural numbers. Show that for all $$n \in D_3$
 * Now, let's try to prove it starting with assuming that all $$n$$ are 3 digit natural numbers.
   * Let $$a, b,$$and $$c$$ represent the three digits of $$n$$such that $$n = 100a + 10b + c$$.
   * If the alternating sum of digits is divisible by 11, then $$11 \mid a - b + c$$.
-  * Using the definition of division, $$a - b + c = 11k$$for some natural number k.
-  * If we 
+  * Using the definition of division, $$a - b + c = 11k$$for some natural number k. We're trying to prove that $$n = 100a + 10b + c = 11m$$for another integer $$m$$as well! 
+  * Solve for $$c$$using the alternating sum to get $$c = 11k + b - a$$. Substitute this value into the second equation to get $$100a + 10b + 11k + b - a = 11m$$. Simplifying, this equation is equivalent to $$99a + 11b + 11k = 11m$$.
+  * We know that **this must be true** because each individual term is multiplied by a number divisible by 11. Therefore, the entire number must also be divisible by 11.
 
 ## Proof by Contraposition
 
