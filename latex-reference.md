@@ -4,13 +4,27 @@ description: A list of frequently used mathematical notation bits.
 
 # LaTeX Reference
 
+### Basics
+
+| Symbol | Description | LaTeX |
+| :--- | :--- | :--- |
+| $$\cdot$$ | Multiplication dot | `\cdot` |
+| $$\cdots$$ | Dots | `\cdots` |
+| $$\frac{x}{y}$$ | Fraction | `\frac{x}{y}` |
+| $$\ge$$ | Greater than or equal to | `\ge` |
+| $$\le$$ | Less than or equal to | `\le` |
+| $$\ne$$ | Not equal to | `\ne` |
+| $$\sum_{i=0}^{n}$$ | Summation | `\sum_{i=0}^{n}` |
+| $$\infty$$ | Infinity | `\infty` |
+| $$\lim_{x \to \infty}$$ | Limit | `\lim_{x \to \infty}` |
+
 ### Propositional Logic
 
 | Symbol | Description | LaTeX |
 | :--- | :--- | :--- |
 | $$\implies$$ | Implication | `\implies` |
 | $$\iff$$ | Logical equivalence | `\iff` |
-| $$\equiv$$ | Logical equivalence | `\equiv` |
+| $$\equiv$$ | Congruence | `\equiv` |
 | $$\exists$$ | Existence | `\exists` |
 | $$\in$$ | Inclusion | `\in` |
 | $$\land$$ | Conjunction \(and\) | `\land` |
@@ -32,6 +46,13 @@ description: A list of frequently used mathematical notation bits.
 | $$\cup$$ | Union \(set or\) | `\cup` |
 | $$\cap$$ | Intersection \(set and\) | `\cap` |
 | $$\emptyset$$ | Empty Set | `\emptyset` |
+| $$\setminus$$ | Set Division | `\setminus` |
+| $$\subseteq$$ | Subset \(inclusive\) | `\subseteq` |
 
+### Modular Arithmetic
 
+| Symbol | Description | LaTeX |
+| :--- | :--- | :--- |
+| $$p \mod q$$ | Modulo | `\mod` |
+| $$p \pmod{q}$$ | Modulo in parentheses | `\pmod{q}` |
 
