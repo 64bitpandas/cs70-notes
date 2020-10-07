@@ -12,11 +12,11 @@
 * [Modular Arithmetic](discrete-math/modular-arithmetic.md)
 * [RSA Cryptography](discrete-math/rsa-cryptography.md)
 * [Polynomials](discrete-math/polynomials.md)
-* [Counting](discrete-math/counting.md)
 
 ## Probability
 
 * [Overview](probability/untitled.md)
+* [Counting](probability/counting.md)
 
 ---
 

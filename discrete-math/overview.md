@@ -19,5 +19,4 @@ Discrete math is an extremely wide field of mathematics. Here, we'll be covering
 * \*\*\*\*[**Modular arithmetic** ](modular-arithmetic.md)explores what happens when when all numbers are remainders of dividing itself by another number. There are some really important theorems here, like the **Chinese Remainder Theorem, Euclid's Algorithm,** and **Fermat's Little Theorem.**
 * \*\*\*\*[**RSA Cryptography**](rsa-cryptography.md) ****is an interesting application of how modular arithmetic is used to encrypt and decrypt messages using a public-private key pair.
 * [**Polynomials** ](polynomials.md)can be used in a discrete sense to create **secret sharing** schemes, and can be recovered from points using **Lagrange Interpolation.**
-* \*\*\*\*[**Counting**](counting.md) ****provides us an intuitive method of figuring out how many possible ways there are to do something.
 
