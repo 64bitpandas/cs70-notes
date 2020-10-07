@@ -33,7 +33,7 @@ There are a good number of ways we can get stable matchings, but one of the most
 #### Important notes about this algorithm:
 
 * **It is guaranteed to terminate.** \(Check the proofs section to see why\)
-* **Every day, it gets better for candidates.** This is because candidates can choose their best offer, so as more offers keep rolling in they get more \(and better\) choices. This means that this particular algorithm is **candidate-optimal** and **job-pessimal.** Indeed, regardless of what the groups are, **whichever group proposes will have optimal results.**
+* **Every day, it gets better for candidates.** This is because candidates can choose their best offer, so as more offers keep rolling in they get more \(and better\) choices. This means that this particular algorithm is **job-optimal** and **candidate-pessimal.** Indeed, regardless of what the groups are, **whichever group proposes will have optimal results.**
 
 ### An Example
 
