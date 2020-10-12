@@ -71,7 +71,7 @@ Roughly, implication in plain English can be stated in the form **if P, then Q.*
 | T | T | T | T |
 | T | F | F | F |
 | F | T | T | F |
-| F | T | T | T |
+| F | F | T | T |
 
 **Note that the truth table for** $$P \implies Q$$ **is equivalent to the one for** $$\lnot P \lor Q$$**!**  That means this formula is logically the same as $$P \implies Q$$.
 
