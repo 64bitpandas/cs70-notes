@@ -76,3 +76,5 @@ Formal steps:
 
 Continuum hypothesis: there is no set with cardinality between the naturals and the reals. \(TODO what is cardinality?\)
 
+Generalized continuum hypothesis: there is no infinite set whose cardinality is between the cardinality of an infinite set and its power set. \(The power set of the natural numbers is not countable.\)
+

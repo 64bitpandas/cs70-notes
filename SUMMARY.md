@@ -13,6 +13,7 @@
 * [RSA Cryptography](discrete-math/rsa-cryptography.md)
 * [Polynomials](discrete-math/polynomials.md)
 * [Countability](discrete-math/countability.md)
+* [Computability](discrete-math/computability.md)
 
 ## Probability
 
