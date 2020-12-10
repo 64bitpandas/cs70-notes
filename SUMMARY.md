@@ -23,4 +23,5 @@
 ---
 
 * [LaTeX Reference](latex-reference.md)
+* [Conditional Expectation and Variance](conditional-expectation-and-variance.md)
 
