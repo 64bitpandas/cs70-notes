@@ -67,11 +67,11 @@ Erasure errors aren't too tough to think about once we have a good grasp of poly
 
 General errors, on the other hand, are slightly more difficult to consider because they could throw off the result wildly if we do not identify them. So how do we figure out which points are the errors?
 
- Let us construct an error-locator polynomial $$E(x) = (x-e_1)(x-e_2) \cdots (x-e_k)$$ where an error $e\_i$ represents the incorrect value given by one of the spies when in a larger group.
+ Let us construct an error-locator polynomial $$E(x) = (x-e_1)(x-e_2) \cdots (x-e_k)$$ where an error $$e_i$$ represents the incorrect value given by one of the spies when in a larger group.
 
 For any one point $$i$$ in the original polynomial $$P(i)$$, we know that $$P(i)E(i) = r_iE(i)$$ where $$r_i$$ is the original location of the point of the polynomial.
 
-If we have $$M$$ original data points, this provides enough points for a $$M-1$$ degree polynomial, which we can call $$Q(x)$$. For any particular point, though, we know that $$Q(i) = P(i)E(i)$$ since the point given is either in the original polynomial, or is in the error-locator polynomial. Therefore, in order to solve for the true polynomial $$P(x)$$, we can take the ratio $$\frac{Q(x)}{E(x)}$$ by definition of $$Q(x)$$. Since we do not know what each value $$e_i$$ is, we need to solve a system of linear equations for each point to identify what these are. This requires $$M + 2k$$ equations, because we require the polynomial $$Q(x)E(x)$$ to perform this calculation.
+If we have $$M$$ original data points, this provides enough points for a $$M-1$$ degree polynomial, which we can call $$Q(x)$$. For any particular point, though, we know that $$Q(i) = P(i)E(i)$$ since the point given is either in the original polynomial, or is in the error-locator polynomial. Therefore, in order to solve for the true polynomial $$P(x)$$, we can take the ratio $$\frac{Q(x)}{E(x)}$$ by definition of $$Q(x)$$. Since we do not know what each value $$e_i$$ is, we need to solve a system of linear equations for each point to identify what these are. **This requires** $$M + 2k$$ **equations**, because we require the polynomial $$Q(x)E(x)$$ to perform this calculation.
 
 \*\*\*\*
 

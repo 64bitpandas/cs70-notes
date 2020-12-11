@@ -125,5 +125,5 @@ Here is a running list of topics that are currently covered:
   </tbody>
 </table>
 
-
+Where $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$and $$\Gamma(r) = \int_0^\infty x^{r-1}e^{-x}dx = (r-1)\Gamma(r-1) = (r-1)!$$
 
