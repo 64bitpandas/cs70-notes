@@ -6,7 +6,7 @@
 
 **How big is infinity? Are some infinities bigger than others?** The $$\infty$$is a rather mind-boggling concept; the principles of countability will hopefully make some sense out of it.
 
-### Bijections
+## Bijections
 
 A **bijection** is a mapping between two sets such that there **exists** a **unique** pairing from a particular element of one set to another.
 
@@ -23,7 +23,7 @@ A **bijection,** also known as an **isomorphism,** is a mapping that is **both o
 
 ![Source: http://www.eecs70.org/static/notes/n11.pdf ](../.gitbook/assets/image%20%2818%29.png)
 
-### Countability
+## Countability
 
 A set $$S$$ is **countable** if there is a **bijection from S to the set of natural numbers** $$\mathbb{N}$$**or a subset of N.** In other words, $$S$$and $$\mathbb{N}$$have the **same cardinality.**   
 This should make intuitive sense because the natural numbers are, by definition, countable \(we can start from 1, then 2, then 3... and hit them all\), so if we can somehow number off some elements in a group and count them that way, then those elements are countable!
@@ -36,7 +36,7 @@ This should make intuitive sense because the natural numbers are, by definition,
 * Find an injection from S to N, AND an injection from N to S.
 * **Enumeration**: list all elements of S. 
 
-### Enumerability
+## Enumerability
 
 Let's now think about some ways we can list every element in a set.   
 Some properties to keep in mind:
@@ -53,7 +53,7 @@ One example of a non-enumerable set is the set of all rational numbers: we can't
 
 
 
-### Pairs of Natural Numbers
+## Pairs of Natural Numbers
 
 A pair of natural numbers $$N \times N$$ has size $$|N| \times |N|$$so it is countably infinite. We can enumerate this: $$(0,0), (1,0), (0,1), (2,0) \cdots$$which guarantees that the pair $$(a,b)$$is in the first $$(\frac{(a+b+1)(a+b)}{2}$$elements in the list. \(triangle\)
 
@@ -63,7 +63,7 @@ A pair of natural numbers $$N \times N$$ has size $$|N| \times |N|$$so it is cou
 
 Rationals are countably infinite by writing them all in the form $$(p,q)$$for a rational number $$n=\frac{p}{q}$$. We determined that all pairs of natural numbers is countable so rational numbers are as well.
 
-### Cantor's Diagonalization Argument
+## Cantor's Diagonalization Argument
 
 **Proof by contradiction:** assume that a set S is countable \(even if it isn't\). Then, there must exist a listing that contains all elements in the list \(enumeration\).
 
