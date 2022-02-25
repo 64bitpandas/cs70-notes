@@ -122,6 +122,6 @@ In plain English: "There exists an integer $$q$$such that when we multiply $$q$$
 
 ## Resources
 
-Note 1: [https://www.eecs70.org/static/notes/n1.pdf](https://www.eecs70.org/static/notes/n1.pdf)  
-Discussion 0: [https://www.eecs70.org/static/discussions/dis0.pdf](https://www.eecs70.org/static/discussions/dis0.pdf)
+Note 1: [https://www.eecs70.org/assets/pdf/notes/n1.pdf](https://www.eecs70.org/assets/pdf/notes/n1.pdf)  
+Discussion 0: [https://www.eecs70.org/assets/pdf/dis00a.pdf](https://www.eecs70.org/assets/pdf/dis00a.pdf)
 
