@@ -129,7 +129,7 @@ For prime $$p$$ and an integer $$a \in \{1, 2, \cdots, p - 1\}$$, $$a^{p-1} \equ
 
 #### An Alternative Definition
 
-If we multiply both sides by $$n$$, we can actually drop the restriction to $$a$$and allow $$a$$to be any number. This version is sometimes more useful than the normal definition:
+If we multiply both sides by $$a$$, we can actually drop the restriction to $$a$$and allow it to be any integer. This version is sometimes more useful than the normal definition:
 
 For prime $$p$$ and any integer $$a$$, $$a^p \equiv a \pmod{p}$$. 
 
