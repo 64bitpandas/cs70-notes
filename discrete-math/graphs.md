@@ -82,7 +82,7 @@ Hypercubes are super useful, particularly for representing **bit strings.** If w
 
 ## Planar Graphs
 
-A **planar graph** is a graph that can be drawn without having two edges overlap:
+A **planar graph** is a graph that can be drawn without having two edges overlap.
 
 **Euler's Formula** states that a connected planar graph has two more vertices and faces than the number of edges:
 
@@ -168,7 +168,7 @@ Well, now each of the 5 neighbors each are assigned a different color. If we add
 
 ### Five and Four Color Theorem
 
-It turns out that 6 is actually not the tightest bound we can put on the number of colors needed! It is possible to color all **vertices** with **5 colors** or less and all **faces** with **4 colors** or less in a **planar graph**. I won't go into the details of these proofs here, but check out the bottom of [Note 5](https://www.eecs70.org/static/notes/n5.pdf) for the proof of the 5 color theorem, and [Wikipedia](https://en.wikipedia.org/wiki/Four_color_theorem) has a good introduction to the \(highly technical\) 4 color theorem proof.
+It turns out that 6 is actually not the tightest bound we can put on the number of colors needed! It is possible to color all **vertices** with **5 colors** or less and all **faces** with **4 colors** or less in a **planar graph**. I won't go into the details of these proofs here, but check out the bottom of [Note 5](https://www.eecs70.org/assets/pdf/notes/n5.pdf) for the proof of the 5 color theorem, and [Wikipedia](https://en.wikipedia.org/wiki/Four_color_theorem) has a good introduction to the \(highly technical\) 4 color theorem proof.
 
 
 
