@@ -34,7 +34,7 @@ A **cycle** is a special path that begins and ends on the same vertex.
 
 A **walk** is a sequence of edges that could possibly repeat a vertex or edge.
 
-A **tour** is a walk that starts and ends on the same nodes. Additionally, it cannot have any repeated edges.
+A **tour** is a walk that starts and ends on the same vertex. Additionally, it cannot have any repeated edges.
 
 * An **Eulerian walk** is a walk that uses **every edge** exactly once.
   * Doesn't require all vertices to be connected! There could be an isolated vertex with 0 degree.
