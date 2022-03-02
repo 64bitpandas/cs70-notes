@@ -55,8 +55,7 @@ A **tree** is kind of like the opposite of a complete graph in that it has the *
 
 * Trees are **acyclic** and **connected.**
 * **Leaves** are vertices that have degree 1.
-* The **root** is a single vertex that has degree 2.
-* **Non-leaf vertices** have degree 3.
+* In a tree in which each parent node has 2 children, the **root** is a single vertex that has degree 2 and **non-leaf vertices** have degree 3.
 
 ## Hypercubes
 
