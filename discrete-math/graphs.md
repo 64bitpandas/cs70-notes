@@ -76,7 +76,7 @@ You might have noticed a pattern in how many vertices and edges a hypercube has.
 * A hypercube has $$2^n$$vertices.
 * A hypercube has $$n2^{n-1}$$edges.
 
-Hypercubes are super useful, particularly for representing **bit strings.** If we have an $$n$$-dimensional hypercube, then we have enough vertices to represent all possible permutations of 1's and 0's of length $$n$$. Every edge would then represent the act of flipping exactly one bit:
+Hypercubes are super useful, particularly for representing **bit strings.** If we have an $$n$$-dimensional hypercube, then we have enough vertices to represent all possible permutations of 1's and 0's of length $$n$$. Every edge would then represent the act of flipping exactly one bit.
 
 
 
