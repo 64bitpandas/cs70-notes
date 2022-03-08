@@ -42,6 +42,15 @@ A **tour** is a walk that starts and ends on the same vertex. Additionally, it c
   * Theorem: any undirected graph has an Eulerian tour if and only if all vertices have **even degree** and is connected.
   * Proof: You need to use two incident edges every time you visit a node \(to enter and leave\). So when you enter, you need another edge to be able to leave! If a vertex has an odd number of edges, then you get stuck on that vertex with nowhere to go once you visit it.
 
+Here's a handy summary, adapted from an explanation by [Dustin Luong](https://github.com/dstnluong):
+
+|                          | end anywhere | start = end |
+|--------------------------|--------------|-------------|
+| repeated vertices ok     | walk         | tour*       |
+| repeated vertices not ok | path         | cycle*      |
+
+\*Eulerian if it uses each edge exactly once.
+
 Two vertices $$u$$and $$v$$are **connected** if there exists a **path** between them.
 
 * If all vertices are connected, then the graph is considered a **connected graph.**
