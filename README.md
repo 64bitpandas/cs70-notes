@@ -2,26 +2,22 @@
 
 ### Welcome to 64bitpanda's CS70 Guide!
 
-\(If you are looking at this in GitHub, go to [cs70.bencuan.me](https://cs70.bencuan.me) for a much better experience!\)
+(If you are looking at this in GitHub, go to [cs70.bencuan.me](https://cs70.bencuan.me) for a much better experience!)
 
-This is a **non-comprehensive** guide to discrete math and probability, specifically for computer science applications. It's based off of Berkeley's [CS70](https://www.eecs70.org/) material \(and doubles as my notes for the course\). 
-
-Big preface: **The course notes are already extremely good.** Those should be the \#1 resource when trying to understand the material, especially the proofs behind many of the principles at hand. **This guide will not discuss proofs**, but rather the intuition behind what they are trying to prove in the first place.
-
-**Note that this guide will be WIP until mid-December 2020.** I'm completing this as I take the course for the first time, so pages won't be added until I learn more about their topics \(and might be inaccurate until I can go back and review everything at the end\).
+This is a **non-comprehensive** guide to discrete math and probability, specifically for computer science applications. It's based off of Berkeley's [CS70](https://www.eecs70.org/) material (and doubles as my notes for the course).&#x20;
 
 ### Who is this for?
 
 Mostly me; making unnecessarily detailed guides is my goto method of making sure I understand everything😁But you are welcome to use it as well for reviewing for exams, touching up on discrete math, or whatever you want!\*
 
-\*Must comply with [GPL license](https://github.com/64bitpandas/cs70-notes/blob/master/LICENSE) \(yay open source!\)
+\*Must comply with [GPL license](LICENSE) (yay open source!)
 
 ### How to use this guide
 
 Again, I will emphasize that this **isn't a textbook.** While I try to be as comprehensive as possible, I'm sure I missed plenty of important concepts or assume you know others. I don't have an army of peer reviewers and guinea pigs to test-read the thing, so it's also not guaranteed that everything is 100% accurate. Please [open an issue](https://github.com/64bitpandas/cs61b-notes/issues) if you think something's wrong!
 
 {% hint style="warning" %}
-For more difficult topics, I'll put a warning like this at the top of the page with links to prerequisites or supporting topics so that you won't feel completely lost 😉
+For more difficult topics, I'll put a warning like this at the top of the page with links to prerequisites or supporting topics so that you won't feel completely lost :fearful:
 {% endhint %}
 
 ### How to contribute
@@ -34,5 +30,4 @@ For LaTeX specifically, you can easily create expressions by surrounding them wi
 
 #### Credits
 
-* [Ben Cuan \(64bitpandas\)](https://github.com/64bitpandas)
-
+* [Ben Cuan (64bitpandas)](https://github.com/64bitpandas)
