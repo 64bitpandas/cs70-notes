@@ -9,7 +9,7 @@ Instead of a full write-up, the pages in this section will typically just link t
 Here is a running list of topics in this section:
 
 * ****[**Counting**](counting.md) **** provides us an intuitive method of figuring out how many possible ways there are to do something.
-* More TBA!
+*
 
 ### Reference
 
