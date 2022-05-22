@@ -8,7 +8,7 @@
 
 ### Bayes' Rule
 
-Bayes' Rule is used to re-express conditional probabilities $$P(A|B)$$ as ​
+Bayes' Rule is used to re-express conditional probabilities $$P(A|B)$$.
 
 [http://prob140.org/textbook/content/Chapter\_02/05\_Updating\_Probabilities.html#bayes-rule](http://prob140.org/textbook/content/Chapter\_02/05\_Updating\_Probabilities.html#bayes-rule)
 
