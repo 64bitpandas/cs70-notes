@@ -2,7 +2,7 @@
 
 ## Introduction
 
-"I learned this in 4th grade", you say, "and I already know how to do Taylor approximations and binomial expansions and get local minima... what else is there to do?" \(At least that was my first thought 😛\)
+"I learned this in 4th grade", you say, "and I already know how to do Taylor approximations and binomial expansions and get local minima... what else is there to do?" (At least that was my first thought :stuck\_out\_tongue:)
 
 Turns out, polynomials are super useful in the world of discrete math. Here, we'll cover two applications in discrete space, which are **secret sharing** and **error correction.**
 
@@ -14,12 +14,12 @@ $$
 a_dx^d + a_{d-1}x^{d-1} + \cdots + a_1x + a_0
 $$
 
-where $$d$$is the **degree** of the polynomial \(highest power\) and $$a_i$$are the **coefficients.**
+where $$d$$is the **degree** of the polynomial (highest power) and $$a_i$$are the **coefficients.**
 
 Polynomials have some nice properties:
 
 * A nonzero polynomial of degree $$d$$has at most $$d$$real roots.
-* If we're given $$d+1$$distinct points \(x y pairs\), there is exactly one, unique polynomial of degree $$d$$that goes through all of those points.
+* If we're given $$d+1$$distinct points (x y pairs), there is exactly one, unique polynomial of degree $$d$$that goes through all of those points.
 
 ### Finite Fields
 
@@ -31,7 +31,7 @@ Even when working over a finite field, the two properties of polynomials still a
 
 We have already established that $$d+1$$points only have one unique degree $$d$$polynomial that goes through all of them. But how do we find this one polynomial?
 
-**Lagrange Interpolation** is a method to recover this polynomial given your original points. It has a lot of interesting ties to previously covered concepts like the Chinese Remainder Theorem and linear algebra \(which won't be covered here, but explore it further to find out more!\). Here's how it works:
+**Lagrange Interpolation** is a method to recover this polynomial given your original points. It has a lot of interesting ties to previously covered concepts like the Chinese Remainder Theorem and linear algebra (which won't be covered here, but explore it further to find out more!). Here's how it works:
 
 First, let's find a polynomial that is degree $$d$$ and is equal to $$1$$at point $$x_1$$, but $$0$$everywhere else.  This isn't too hard to do: we can use $$(x-x_2)(x-x_3)\cdots(x-x_{d+1})$$. Note here that we skipped $$x_1$$because adding that term would make the polynomial degree $$d+1$$! However, this alone would result in a number other than 1 at $$x_1$$, so we can normalize it by dividing by all $$(x_1-x_j)$$:
 
@@ -57,7 +57,7 @@ We know that a 29-degree unique polynomial can be recovered with 30 distinct poi
 
 ## Error Correction
 
-Lagrange interpolation can also be used to correct errors in data \(if it gets erased or corrupted\). There are two main types of errors: **erasure errors,** when the data is simply lost, and **general errors,** where the data is corrupted and displays something other than the original data.
+Lagrange interpolation can also be used to correct errors in data (if it gets erased or corrupted). There are two main types of errors: **erasure errors,** when the data is simply lost, and **general errors,** where the data is corrupted and displays something other than the original data.
 
 ### Erasure Errors
 
@@ -67,11 +67,10 @@ Erasure errors aren't too tough to think about once we have a good grasp of poly
 
 General errors, on the other hand, are slightly more difficult to consider because they could throw off the result wildly if we do not identify them. So how do we figure out which points are the errors?
 
- Let us construct an error-locator polynomial $$E(x) = (x-e_1)(x-e_2) \cdots (x-e_k)$$ where an error $$e_i$$ represents the incorrect value given by one of the spies when in a larger group.
+&#x20;Let us construct an error-locator polynomial $$E(x) = (x-e_1)(x-e_2) \cdots (x-e_k)$$ where an error $$e_i$$ represents the incorrect value given by one of the spies when in a larger group.
 
 For any one point $$i$$ in the original polynomial $$P(i)$$, we know that $$P(i)E(i) = r_iE(i)$$ where $$r_i$$ is the original location of the point of the polynomial.
 
 If we have $$M$$ original data points, this provides enough points for a $$M-1$$ degree polynomial, which we can call $$Q(x)$$. For any particular point, though, we know that $$Q(i) = P(i)E(i)$$ since the point given is either in the original polynomial, or is in the error-locator polynomial. Therefore, in order to solve for the true polynomial $$P(x)$$, we can take the ratio $$\frac{Q(x)}{E(x)}$$ by definition of $$Q(x)$$. Since we do not know what each value $$e_i$$ is, we need to solve a system of linear equations for each point to identify what these are. **This requires** $$M + 2k$$ **equations**, because we require the polynomial $$Q(x)E(x)$$ to perform this calculation.
 
-\*\*\*\*
-
+****
