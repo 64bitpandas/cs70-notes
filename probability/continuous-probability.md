@@ -1,10 +1,16 @@
 # Continuous Probability
 
-INSERT IMAGE HERE
+![Credit: Huiyi Zhang](<../.gitbook/assets/image (21).png>)
 
-http://prob140.org/textbook/content/Chapter_07/01_Poisson_Distribution.html
-http://prob140.org/textbook/content/Chapter_21/00_The_Beta_and_the_Binomial.html
-http://prob140.org/textbook/content/Chapter_15/04_Exponential_Distribution.html?highlight=exponential
-http://prob140.org/textbook/content/Chapter_18/01_Standard_Normal_Basics.html
-http://prob140.org/textbook/content/Chapter_18/03_The_Gamma_Family.html
-http://prob140.org/textbook/content/Chapter_18/04_Chi_Squared_Distributions.html
+All of the continuous probability distributions are deeply connected. Above is a chart describing some of their relationships.
+
+
+
+Below are some links:
+
+* [Poisson](http://prob140.org/textbook/content/Chapter\_07/01\_Poisson\_Distribution.html)
+* [Beta](http://prob140.org/textbook/content/Chapter\_21/00\_The\_Beta\_and\_the\_Binomial.html)
+* [Exponential](http://prob140.org/textbook/content/Chapter\_15/04\_Exponential\_Distribution.html?highlight=exponential)
+* [Normal](http://prob140.org/textbook/content/Chapter\_18/01\_Standard\_Normal\_Basics.html)
+* [Gamma](http://prob140.org/textbook/content/Chapter\_18/03\_The\_Gamma\_Family.html)
+* [Chi-Squared](http://prob140.org/textbook/content/Chapter\_18/04\_Chi\_Squared\_Distributions.html)

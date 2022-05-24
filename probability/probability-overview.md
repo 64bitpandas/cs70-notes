@@ -6,11 +6,16 @@ Instead of a full write-up, the pages in this section will typically just link t
 
 TL;DR don't use this section of the guide, just read the 140 textbook.
 
-
-
 Here is a running list of topics in this section:
 
-* ****[**Counting**](counting.md) **** provides us an intuitive method of figuring out how many possible ways there are to do something.
+* [**Counting**](counting.md) provides us an intuitive method of figuring out how many possible ways there are to do something.
+* [**Discrete probability distributions**](discrete-probability.md), such as the Binomial or Geometric distributions, describe the probabilities of a finite set of outcomes.
+* [**Continuous probability distributions**](continuous-probability.md), such as the Poisson or Normal distributions, help us model real values, like lifetime or height.
+* ****[**Markov chains**](markov-chains.md) model transitions between discrete states.
+* [**Expectation and variance**](expectation-and-variance.md) are tools to describe the characteristics of a random variable or distribution.
+* [**Concentration inequalities**](concentration-inequalities.md) allow us to approximate bounds for random variables when we only know their expectation and/or variance.
+
+There is far more to explore in learning the basics of probability- not everything is included in this list!
 
 ### Reference
 

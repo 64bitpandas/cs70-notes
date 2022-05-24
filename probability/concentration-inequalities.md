@@ -1,7 +1,7 @@
 # Concentration Inequalities
 
-Markov's Inequality: http://prob140.org/textbook/content/Chapter_18/04_Chi_Squared_Distributions.html
+Markov's Inequality: [http://prob140.org/textbook/content/Chapter\_18/04\_Chi\_Squared\_Distributions.html](http://prob140.org/textbook/content/Chapter\_18/04\_Chi\_Squared\_Distributions.html)
 
-Chebyshev's Inequality: http://prob140.org/textbook/content/Chapter_18/04_Chi_Squared_Distributions.html
+Chebyshev's Inequality: [http://prob140.org/textbook/content/Chapter\_18/04\_Chi\_Squared\_Distributions.html](http://prob140.org/textbook/content/Chapter\_18/04\_Chi\_Squared\_Distributions.html)
 
-Chernoff Bound: http://prob140.org/textbook/content/Chapter_19/04_Chernoff_Bound.html?highlight=chernoff
+Chernoff Bound:[ http://prob140.org/textbook/content/Chapter\_19/04\_Chernoff\_Bound.html?highlight=chernoff](http://prob140.org/textbook/content/Chapter\_19/04\_Chernoff\_Bound.html?highlight=chernoff)
