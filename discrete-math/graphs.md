@@ -34,13 +34,22 @@ A **cycle** is a special path that begins and ends on the same vertex.
 
 A **walk** is a sequence of edges that could possibly repeat a vertex or edge.
 
-A **tour** is a walk that starts and ends on the same nodes. Additionally, it cannot have any repeated edges.
+A **tour** is a walk that starts and ends on the same vertex. Additionally, it cannot have any repeated edges.
 
 * An **Eulerian walk** is a walk that uses **every edge** exactly once.
   * Doesn't require all vertices to be connected! There could be an isolated vertex with 0 degree.
 * An **Eulerian tour** is a tour that visits **every edge** in a graph exactly once**.**
   * Theorem: any undirected graph has an Eulerian tour if and only if all vertices have **even degree** and is connected.
   * Proof: You need to use two incident edges every time you visit a node (to enter and leave). So when you enter, you need another edge to be able to leave! If a vertex has an odd number of edges, then you get stuck on that vertex with nowhere to go once you visit it.
+
+Here's a handy summary, adapted from an explanation by [Dustin Luong](https://github.com/dstnluong):
+
+|                          | end anywhere | start = end |
+|--------------------------|--------------|-------------|
+| repeated vertices ok     | walk         | tour*       |
+| repeated vertices not ok | path         | cycle*      |
+
+\*Eulerian if it uses each edge exactly once.
 
 Two vertices $$u$$and $$v$$are **connected** if there exists a **path** between them.
 
@@ -55,8 +64,7 @@ A **tree** is kind of like the opposite of a complete graph in that it has the *
 
 * Trees are **acyclic** and **connected.**
 * **Leaves** are vertices that have degree 1.
-* The **root** is a single vertex that has degree 2.
-* **Non-leaf vertices** have degree 3.
+* In a tree in which each parent node has 2 children, the **root** is a single vertex that has degree 2 and **non-leaf vertices** have degree 3.
 
 ## Hypercubes
 
@@ -77,13 +85,13 @@ You might have noticed a pattern in how many vertices and edges a hypercube has.
 * A hypercube has $$2^n$$vertices.
 * A hypercube has $$n2^{n-1}$$edges.
 
-Hypercubes are super useful, particularly for representing **bit strings.** If we have an $$n$$-dimensional hypercube, then we have enough vertices to represent all possible permutations of 1's and 0's of length $$n$$. Every edge would then represent the act of flipping exactly one bit:
+Hypercubes are super useful, particularly for representing **bit strings.** If we have an $$n$$-dimensional hypercube, then we have enough vertices to represent all possible permutations of 1's and 0's of length $$n$$. Every edge would then represent the act of flipping exactly one bit.
 
 
 
 ## Planar Graphs
 
-A **planar graph** is a graph that can be drawn without having two edges overlap:
+A **planar graph** is a graph that can be drawn without having two edges overlap.
 
 **Euler's Formula** states that a connected planar graph has two more vertices and faces than the number of edges:
 
@@ -169,5 +177,5 @@ Well, now each of the 5 neighbors each are assigned a different color. If we add
 
 ### Five and Four Color Theorem
 
-It turns out that 6 is actually not the tightest bound we can put on the number of colors needed! It is possible to color all **vertices** with **5 colors** or less and all **faces** with **4 colors** or less in a **planar graph**. I won't go into the details of these proofs here, but check out the bottom of [Note 5](https://www.eecs70.org/static/notes/n5.pdf) for the proof of the 5 color theorem, and [Wikipedia](https://en.wikipedia.org/wiki/Four\_color\_theorem) has a good introduction to the (highly technical) 4 color theorem proof.
+It turns out that 6 is actually not the tightest bound we can put on the number of colors needed! It is possible to color all **vertices** with **5 colors** or less and all **faces** with **4 colors** or less in a **planar graph**. I won't go into the details of these proofs here, but check out the bottom of [Note 5](https://www.eecs70.org/assets/pdf/notes/n5.pdf) for the proof of the 5 color theorem, and [Wikipedia](https://en.wikipedia.org/wiki/Four_color_theorem) has a good introduction to the \(highly technical\) 4 color theorem proof.
 

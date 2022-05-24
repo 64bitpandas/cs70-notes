@@ -157,8 +157,9 @@ The **Well Ordering Principle** states that for all subsets of natural numbers, 
 
 ## More Resources
 
-Note 2: [https://www.eecs70.org/static/notes/n2.pdf](https://www.eecs70.org/static/notes/n2.pdf)
+Note 2: [https://www.eecs70.org/assets/pdf/notes/n2.pdf](https://www.eecs70.org/assets/pdf/notes/n2.pdf)
 
-Note 3: [https://www.eecs70.org/static/notes/n3.pdf](https://www.eecs70.org/static/notes/n3.pdf)
+Note 3: [https://www.eecs70.org/assets/pdf/notes/n3.pdf](https://www.eecs70.org/assets/pdf/notes/n2.pdf)
 
-Lecture 2 Slides: [https://www.eecs70.org/static/slides/lec-2-handout.pdf](https://www.eecs70.org/static/slides/lec-2-handout.pdf)
+Lecture 2 Slides: [https://www.eecs70.org/assets/pdf/lec-2-handout.pdf](https://www.eecs70.org/assets/pdf/lec-2-handout.pdf)
+
