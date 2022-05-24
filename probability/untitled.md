@@ -4,12 +4,13 @@ The probability section of this guide will likely never be fully completed, due 
 
 Instead of a full write-up, the pages in this section will typically just link to relevant sections from the textbook. Personally, I found everything I needed to do well in CS70 probability (and much more) here, including examples that are very similar to problems you might see on the homework.
 
+TL;DR don't use this section of the guide, just read the 140 textbook.
+
 
 
 Here is a running list of topics in this section:
 
 * ****[**Counting**](counting.md) **** provides us an intuitive method of figuring out how many possible ways there are to do something.
-*
 
 ### Reference
 
