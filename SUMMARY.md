@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [This site is now deprecated](README.md)
 * [LaTeX Reference](latex-reference.md)
 
 ## Discrete Math
